@@ -47,10 +47,10 @@ public class Main {
         }
 
         System.out.println("\n----------------------------------------------------------------" +
-                            "Getting access to data via address object");
+                "Getting access to data via address object");
 
         for (Address address : dbUtil.loadAddresses()) {
-            System.out.println(address + "  " + address.getPerson()  +  "  " + address.getCountry());
+            System.out.println(address + "  " + address.getPerson() + "  " + address.getCountry());
         }
 
 
@@ -63,27 +63,6 @@ public class Main {
             }
         }
 
-
-
-        //session.save(address1);
-            /*saveData(p, address1, country1);*/
-
-
-
-            /*System.out.println(session.find(Person.class, 1).getAddressList());
-            System.out.println(dbUtil.loadPersons());
-            System.out.println(".................................................");
-            System.out.println(dbUtil.loadPersons().get(0).getAddressList());
-            dbUtil.loadPersons().forEach(el -> System.out.println(el.getAddressList()));*/
-            /*Person person = new Person("Foo", "Bar");
-            person.getAddressList().add(new Address("3344", "Aschbah", "Foo 33", person, new Country("Deutschland")));
-            dbUtil.savePerson(person);*/
-
     }
-
-    /*private static List<Person> loadPerson() {
-        DBUtil dbUtil = new DBUtil();
-        return
-    }*/
 
 }
